@@ -1,0 +1,154 @@
+@import './src/styles/variables.scss';
+
+$color-text-gray: rgb(240, 240, 240);
+
+.coupons-add {
+  z-index         : 9;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  width           : 100%;
+  height          : 100%;
+  background-color: white;
+
+  &__content {
+    padding: 28px;
+  }
+
+  &__header {
+    padding         : 28px;
+    background-color: #ffc9cd;
+    border-radius   : 8px;
+  }
+
+  &__att {
+    display      : flex;
+    font-size    : 30px;
+    margin-bottom: 20px;
+    color        : #d29292;
+
+    &-name {
+      flex : 0 0 200px;
+      color: #be7676;
+    }
+
+    .input {
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+      width          : 220px;
+      height         : 60px;
+      border         : 1px solid #d2d2d2;
+      border-radius  : 4px;
+    }
+
+    &-text {
+      height: 100px;
+
+      textarea {
+        font-size       : 30px;
+        font-family     : Arial;
+        line-height     : 45px;
+        letter-spacing  : 0;
+        resize          : none;
+        border-radius   : 12px;
+        color           : #d29292;
+        background-color: #fff0f6;
+        padding         : 8px;
+
+        &::placeholder {
+          color: $color-text-gray;
+        }
+      }
+    }
+  }
+
+  &__count {
+    &-wrapper {
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+      box-sizing     : border-box;
+      width          : 100%;
+      padding        : 50px;
+    }
+
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 180px;
+    height          : 180px;
+    border-radius   : 50%;
+    background-color: $color-brand;
+    color           : white;
+    font-size       : 60px;
+
+    .weui-input {
+      text-align: center;
+
+      &::placeholder {
+        color    : $color-text-gray;
+        font-size: 50px;
+      }
+    }
+  }
+
+  .weui-input::placeholder {
+    color: $color-text-gray;
+  }
+
+  &__footer {
+    position       : fixed;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    box-sizing     : border-box;
+    width          : 100%;
+    height         : 110px;
+    padding        : 0 28px;
+    bottom         : 0;
+    bottom         : constant(safe-area-inset-bottom);
+    bottom         : env(safe-area-inset-bottom);
+    left           : 0;
+
+    &-btn {
+      margin: 0;
+      width : 100%
+    }
+  }
+}
+
+.coupons-add__att-text {
+  font-size       : 30px;
+  font-family     : Arial;
+  line-height     : 45px;
+  letter-spacing  : 0;
+  resize          : none;
+  border-radius   : 12px;
+  color           : #d29292;
+  background-color: #fff0f6;
+  padding         : 8px;
+
+  &::placeholder {
+    color: $color-text-gray;
+  }
+}
+
+.place-holder {
+  color: $color-text-gray;
+}
+
+.shuliang {
+  text-align        : center;
+  width             : 100%;
+  border            : 0;
+  outline           : 0;
+  -webkit-appearance: none;
+  background-color  : transparent;
+  // font-size         : 14px;
+  color             : white;
+}
+
+.white-place-holder {
+  color: #ffffff
+}

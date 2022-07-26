@@ -1,0 +1,100 @@
+@import './src/styles/variables.scss';
+
+.coupons-detail {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  &--delete {
+    opacity: 0.5;
+  }
+  &__content {
+    height: calc(100% - 230px);
+    padding: 28px;
+    overflow-y: scroll;
+  }
+  &__header {
+    padding: 28px;
+    background-color: $color-pink;
+    border-radius: 8px;
+  }
+  &__att {
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fefefe;
+
+    &-name {
+      flex: 0 0 200px;
+      color: #fff;
+    }
+  }
+  &__count {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 68px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: $color-brand;
+    color: white;
+    font-size: 60px;
+    .weui-input {
+      text-align: center;
+      &::placeholder {
+        font-size: 50px;
+      }
+    }
+    .amount {
+      font-size: 28px;
+      display: flex;
+      align-items: flex-end;
+      height: 60px;
+      justify-content: flex-end;
+    }
+  }
+  &__log {
+    padding: 28px;
+    background-color: $color-brand-light;
+    color: #fff;
+    border-radius: 12px;
+    &-item {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    margin-bottom: 50px;
+  }
+  .weui-input::placeholder {
+    color: rgb(230, 230, 230);
+  }
+  &__footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    padding: 0 28px;
+    bottom: 0;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    left: 0;
+    background-color: #fff;
+    &-btn {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
