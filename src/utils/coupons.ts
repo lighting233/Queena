@@ -117,7 +117,7 @@ export const getCouponsData = (status?: ICouponsStatus): ICoupon[] => {
   })
 
   // 更新节日数据 TODO: 增加其它节日
-  if (dayjs().startOf('day').valueOf() === dayjs('2021-08-14').valueOf()) {
+  if (dayjs().startOf('day').valueOf() === dayjs('2022-08-04').valueOf()) {
     // id为创建时间 找不到七夕当天创建的七夕礼时 增加七夕礼包
     const needFlag =
       coupons.findIndex((item) => item.tag === '七夕礼') === -1;
